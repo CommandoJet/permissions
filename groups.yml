@@ -50,13 +50,7 @@ groups:
   builder:
     permissions:
     - essentials.gamemode
-    - essentials.give
-    - worldedit.clipboard.copy
-    - worldedit.clipboard.paste
-    - worldedit.fill
-    - worldedit.generation.pyramid
-    - worldedit.region.replace
-    - worldedit.tool.tree
+    - worldedit.*
     groups:
     - default
     meta:
