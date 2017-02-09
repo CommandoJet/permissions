@@ -133,7 +133,7 @@ groups:
     - default
     meta:
       prefix: '&e[&bDeveloper&e] &2'
-      priority: '400'
+      priority: '500'
   builder:
     permissions:
     - essentials.gamemode
