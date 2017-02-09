@@ -77,6 +77,12 @@ groups:
     - essentials.warp.list
     - essentials.build.*
     - essentials.joinfullserver
+    - askyblock.island.*
+    - askyblock.team.create
+    - askyblock.team.kick
+    - askyblock.team.makeleader
+    - askyblock.team.join
+    - askyblock.coop
     groups: []
     meta:
       prefix: '&e[&bPlayer&e] &2'
