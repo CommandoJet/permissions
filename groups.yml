@@ -145,3 +145,15 @@ groups:
     meta:
       prefix: '&e[&bBuilder&e] &2'
       priority: '200'
+  headbuilder:
+    permissions:
+    - essentials.gamemode
+    - worldedit.*
+    - worldguard.*
+    groups:
+    - default
+    - mod
+    - builder
+    meta:
+      prefix: '&e[&bHead Builder&e] &2'
+      priority: '800'    
