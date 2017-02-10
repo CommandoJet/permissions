@@ -85,6 +85,7 @@ groups:
     - askyblock.coop
     - plots.permpack.basic
     - plots.use
+    - plots.auto
     groups: []
     meta:
       prefix: '&e[&bPlayer&e] &2'
