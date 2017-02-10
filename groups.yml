@@ -77,7 +77,7 @@ groups:
     - essentials.warp.list
     - essentials.build
     - essentials.joinfullserver
-    - askyblock.island
+    - askyblock.island.*
     - askyblock.team.create
     - askyblock.team.kick
     - askyblock.team.makeleader
