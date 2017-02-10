@@ -84,6 +84,7 @@ groups:
     - askyblock.team.join
     - askyblock.coop
     - plots.permpack.basic
+    - plots.use
     groups: []
     meta:
       prefix: '&e[&bPlayer&e] &2'
