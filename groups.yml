@@ -83,6 +83,7 @@ groups:
     - askyblock.team.makeleader
     - askyblock.team.join
     - askyblock.coop
+    - plots.permpack.basic
     groups: []
     meta:
       prefix: '&e[&bPlayer&e] &2'
@@ -141,19 +142,6 @@ groups:
     - worldguard.*
     groups:
     - default
-    - mod
     meta:
       prefix: '&e[&bBuilder&e] &2'
       priority: '200'
-  headbuilder:
-    permissions:
-    - essentials.gamemode
-    - worldedit.*
-    - worldguard.*
-    groups:
-    - default
-    - mod
-    - builder
-    meta:
-      prefix: '&e[&bHead Builder&e] &2'
-      priority: '800'    
