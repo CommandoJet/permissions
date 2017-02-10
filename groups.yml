@@ -21,7 +21,7 @@ groups:
     - factions.name
     - factions.invite
     - factions.unsethome
-    - essentials.balance.*
+    - essentials.balance
     - factions.motd
     - factions.sethome
     - factions.seechunk
@@ -29,7 +29,7 @@ groups:
     - factions.home
     - factions.open
     - factions.relation
-    - factions.money.*
+    - factions.money
     - factions.officer
     - factions.map
     - factions.list
@@ -44,9 +44,9 @@ groups:
     - essentials.sethome
     - factions.create
     - essentials.spawn
-    - essentials.kit.*
+    - essentials.kit
     - essentials.pay
-    - essentials.afk.*
+    - essentials.afk
     - - essentials.afk.others
     - essentials.help
     - essentials.helpop
@@ -75,17 +75,19 @@ groups:
     - essentials.teleport.timer.bypass
     - essentials.warp
     - essentials.warp.list
-    - essentials.build.*
+    - essentials.build
     - essentials.joinfullserver
-    - askyblock.island.*
+    - askyblock.island
     - askyblock.team.create
     - askyblock.team.kick
     - askyblock.team.makeleader
     - askyblock.team.join
     - askyblock.coop
-    - plots.permpack.basic
     - plots.use
-    - plots.auto
+    - plots.plot.2 #Where 1 is the number of plots allowed to be claimed
+    - plots.permpack.basic
+    - plots.permpack.basicflags
+    - plots.permpack.basicinbox
     groups: []
     meta:
       prefix: '&e[&bPlayer&e] &2'
@@ -102,28 +104,28 @@ groups:
   mod:
     permissions:
     - essentials.fly
-    - essentials.kit.*
+    - essentials.kit
     - essentials.afk.kickexempt
-    - essentials.help.*
+    - essentials.help
     - essentials.helpop.receive
     - factions.admin
-    - essentials.list.*
-    - essentials.seen.*
-    - essentials.ban.*
+    - essentials.list
+    - essentials.seen
+    - essentials.ban
     - essentials.banip
-    - essentials.enderchest.*
-    - essentials.invsee.*
-    - essentials.kick.*
+    - essentials.enderchest
+    - essentials.invsee
+    - essentials.kick
     - essentials.mute
     - essentials.socialspy
     - essentials.sudo
-    - essentials.tempban.*
+    - essentials.tempban
     - essentials.unban
     - essentials.unbanip
-    - essentials.vanish.*
+    - essentials.vanish
     - essentials.sethome.multiple.unlimited
     - essentials.top
-    - essentials.tp.*
+    - essentials.tp
     groups:
     - default
     meta:
