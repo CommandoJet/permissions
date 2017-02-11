@@ -8,6 +8,7 @@ groups:
     - headdev
     - admin
     - mod
+    - headbuilder
     - builder
     - default
     meta:
@@ -22,6 +23,7 @@ groups:
     - headdev
     - admin
     - mod
+    - headbuilder
     - builder
     - default
     meta:
@@ -34,6 +36,7 @@ groups:
     groups:
     - admin
     - mod
+    - headbuilder
     - builder
     - default
     meta:
@@ -45,6 +48,7 @@ groups:
     - essentials.afk.others
     groups:
     - mod
+    - headbuilder
     - builder
     - default
     meta:
@@ -87,6 +91,19 @@ groups:
     meta:
       prefix: '&e[&bModerator&e] &2'
       priority: '600'
+      
+   headbuilder:
+    permissions:
+    - essentials.gamemode
+    - worldedit.*
+    - worldguard.*
+    groups:
+    - default
+    - mod
+    - builder
+    meta:
+      prefix: '&e[&bHead Builder&e] &2'
+      priority: '500'    
 
   builder:
     permissions:
@@ -100,7 +117,7 @@ groups:
     - default
     meta:
       prefix: '&e[&bBuilder&e] &2'
-      priority: '500'
+      priority: '400'
 
   default:
     permissions:
