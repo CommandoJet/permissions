@@ -4,12 +4,104 @@ groups:
     permissions:
     - '*'
     groups:
+    - coowner
     - headdev
+    - admin
+    - mod
     - builder
     - default
     meta:
       prefix: '&e[&bOwner&e] &2'
+      priority: '1000'
+      
+  coowner:
+    permissions:
+    - '*'
+    - essentials.joinfullserver
+    groups:
+    - headdev
+    - admin
+    - mod
+    - builder
+    - default
+    meta:
+      prefix: '&e[&bCo-Owner&e] &2'
       priority: '900'
+      
+  headdev:
+    permissions:
+    - '*'
+    groups:
+    - admin
+    - mod
+    - builder
+    - default
+    meta:
+      prefix: '&e[&bHeadDeveloper&e] &2'
+      priority: '800'
+      
+  admin:
+    permissions:
+    - essentials.afk.others
+    groups:
+    - mod
+    - builder
+    - default
+    meta:
+      prefix: '&e[&bHeadDeveloper&e] &2'
+      priority: '700'
+            
+  mod:
+    permissions:
+    - essentials.fly
+    - essentials.kit
+    - essentials.afk.kickexempt
+    - essentials.help
+    - essentials.helpop.receive
+    - factions.admin
+    - essentials.list
+    - essentials.seen
+    - essentials.ban
+    - essentials.banip
+    - essentials.enderchest
+    - essentials.invsee
+    - essentials.kick.*
+    - essentials.mute
+    - essentials.socialspy
+    - essentials.sudo
+    - essentials.tempban
+    - essentials.unban
+    - essentials.unbanip
+    - essentials.vanish
+    - essentials.sethome.multiple.unlimited
+    - essentials.top
+    - essentials.tp
+    - essentials.signs.use.weather
+    - essentials.signs.use.time
+    - signs.create.protection
+    - signs.create.trade
+    - signs.break.protection
+    - signs.break.trade
+    groups:
+    - default
+    meta:
+      prefix: '&e[&bModerator&e] &2'
+      priority: '600'
+
+  builder:
+    permissions:
+    - essentials.signs.use.gamemode
+    - essentials.gamemode
+    - essentials.gamemode.creative
+    - essentials.gamemode.survival
+    - worldedit.*
+    - worldguard.*
+    groups:
+    - default
+    meta:
+      prefix: '&e[&bBuilder&e] &2'
+      priority: '500'
+
   default:
     permissions:
     - activitycoins.own
@@ -44,12 +136,10 @@ groups:
     - essentials.sethome
     - factions.create
     - essentials.spawn
-    - essentials.kit
+    - - essentials.kit.*
     - essentials.pay
     - essentials.afk
-    - - essentials.afk.others
     - essentials.help
-    - essentials.helpop
     - essentials.helpop
     - essentials.ignore
     - essentials.list
@@ -64,7 +154,6 @@ groups:
     - essentials.kick.notify
     - essentials.mute.notify
     - - essentials.vanish.effect
-    - essentials.spawn
     - essentials.delhome
     - essentials.back
     - essentials.tpa
@@ -76,7 +165,20 @@ groups:
     - essentials.warp
     - essentials.warp.list
     - essentials.build
-    - essentials.joinfullserver
+    - essentials.signs.use.balance
+    - essentials.signs.use.buy
+    - essentials.signs.use.disposal
+    - essentials.signs.use.enchant
+    - essentials.signs.use.free
+    - essentials.signs.use.heal
+    - essentials.signs.use.info
+    - essentials.signs.use.kit
+    - essentials.signs.use.mail
+    - essentials.signs.use.protection
+    - essentials.signs.use.repair
+    - essentials.signs.use.sell
+    - essentials.signs.use.trade
+    - essentials.signs.use.warp
     - askyblock.island.*
     - askyblock.team.create
     - askyblock.team.kick
@@ -92,60 +194,4 @@ groups:
     meta:
       prefix: '&e[&bPlayer&e] &2'
       priority: '100'
-  headdev:
-    permissions:
-    - '*'
-    groups:
-    - builder
-    - default
-    meta:
-      prefix: '&e[&bHeadDeveloper&e] &2'
-      priority: '400'
-  mod:
-    permissions:
-    - essentials.fly
-    - essentials.kit
-    - essentials.afk.kickexempt
-    - essentials.help
-    - essentials.helpop.receive
-    - factions.admin
-    - essentials.list
-    - essentials.seen
-    - essentials.ban
-    - essentials.banip
-    - essentials.enderchest
-    - essentials.invsee
-    - essentials.kick.*
-    - essentials.mute
-    - essentials.socialspy
-    - essentials.sudo
-    - essentials.tempban
-    - essentials.unban
-    - essentials.unbanip
-    - essentials.vanish
-    - essentials.sethome.multiple.unlimited
-    - essentials.top
-    - essentials.tp
-    groups:
-    - default
-    meta:
-      prefix: '&e[&bModerator&e] &2'
-      priority: '300'
-  dev:
-    permissions:
-    - '*'
-    groups:
-    - default
-    meta:
-      prefix: '&e[&bDeveloper&e] &2'
-      priority: '500'
-  builder:
-    permissions:
-    - essentials.gamemode
-    - worldedit.*
-    - worldguard.*
-    groups:
-    - default
-    meta:
-      prefix: '&e[&bBuilder&e] &2'
-      priority: '200'
+      
